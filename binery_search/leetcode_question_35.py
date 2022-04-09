@@ -8,10 +8,11 @@
 # as it'll be in the exact location where the target value should be placed
 
 def searchInsert(nums, target):
-    start, end = 0, len(nums) - 1
+    start = 0
+    end = len(nums) - 1  # 3
     while start <= end:
         mid = (start + end) // 2
-        print(mid)
+        # print(mid)
         if nums[mid] == target:
             return mid
         elif nums[mid] > target:
@@ -22,5 +23,8 @@ def searchInsert(nums, target):
 
 
 nums = [1, 3, 5, 6]
-target = 5
+# target = 5
+# target = 2
+target = 7
+
 print(searchInsert(nums, target))
