@@ -13,8 +13,6 @@ def strStr(haystack, needle):
     return -1
 
 
-
-
 haystack = "hello"
 needle = "ll"
 print(strStr(haystack, needle))
